@@ -95,11 +95,9 @@
   .list h3{font-size:16px;font-weight:600;line-height:1.3}
   .list p{grid-column:2;color:var(--muted);font-size:14.5px;line-height:1.45}
 
-  .now{background:var(--navy);color:#fff;border-radius:var(--r);padding:18px 18px 16px;position:relative;overflow:hidden}
-  .now::after{content:"";position:absolute;right:-30px;top:-30px;width:140px;height:140px;opacity:.12;
-    background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);background-size:20px 20px}
-  .now small{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-bottom:8px}
-  .now p{font-size:16px;line-height:1.45;position:relative}
+  .now{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--navy);border-radius:var(--r);padding:14px 16px}
+  .now small{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+  .now p{font-size:15px;line-height:1.45}
 
   .formats{display:grid;grid-template-columns:1fr 1fr;gap:8px}
   .fmt{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px}
