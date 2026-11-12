@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Екатерина Старченко — юрист по коммерческой недвижимости</title>
-<meta name="description" content="Договоры аренды, брокеридж и управление коммерческими объектами. Склады, Light и Urban Industrial. Москва.">
-<meta property="og:title" content="Екатерина Старченко — юрист по коммерческой недвижимости">
-<meta property="og:description" content="Договоры аренды, брокеридж, управление объектами. Москва.">
+<title>Екатерина Старченко, юрист по коммерческой недвижимости</title>
+<meta name="description" content="Правовое сопровождение, брокеридж, управление коммерческими объектами. Москва.">
+<meta property="og:title" content="Екатерина Старченко, юрист по коммерческой недвижимости">
+<meta property="og:description" content="Правовое сопровождение, брокеридж, управление объектами. Москва.">
 <meta property="og:image" content="https://appleidvd84.github.io/starchenko/photo.jpg">
 <meta property="og:url" content="https://appleidvd84.github.io/starchenko/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%231E3A5F%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2215%22 fill=%22white%22 text-anchor=%22middle%22%3E%D0%95%D0%A1%3C/text%3E%3C/svg%3E">
@@ -37,18 +37,12 @@
     -webkit-font-smoothing:antialiased;
   }
   a{color:inherit}
-  .wrap{max-width:440px;margin:0 auto;padding:20px 20px calc(32px + env(safe-area-inset-bottom))}
-
-  /* шапка-реквизит, как у документа */
-  .meta{display:flex;justify-content:space-between;align-items:center;
-    font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);
-    padding-bottom:14px;border-bottom:1px solid var(--line)}
-  .meta b{font-weight:600;color:var(--ink);letter-spacing:.1em}
+  .wrap{max-width:440px;margin:0 auto;padding:16px 18px calc(20px + env(safe-area-inset-bottom))}
 
   /* герой */
-  .hero{display:grid;grid-template-columns:112px 1fr;gap:18px;align-items:end;padding:22px 0 18px;position:relative}
+  .hero{display:grid;grid-template-columns:112px 1fr;gap:18px;align-items:end;padding:4px 0 12px;position:relative}
   .hero::before{ /* сетка «план этажа» */
-    content:"";position:absolute;inset:8px 0 auto 0;height:170px;z-index:-1;
+    content:"";position:absolute;inset:0 0 auto 0;height:150px;z-index:-1;
     background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
     background-size:28px 28px;opacity:.55;
     -webkit-mask-image:linear-gradient(90deg,transparent,#000 55%,transparent);
@@ -61,63 +55,57 @@
   .role::before{content:"";display:block;width:28px;height:3px;background:var(--ochre);margin-bottom:10px;border-radius:2px}
 
   .lead{color:var(--muted);font-size:15px}
-  .status{margin-top:14px;display:flex;gap:10px;align-items:flex-start;
-    background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;font-size:14px;line-height:1.4}
+  .status{margin-top:10px;display:flex;gap:10px;align-items:flex-start;
+    background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:10px 14px;font-size:14px;line-height:1.4}
   .dot{flex:none;width:8px;height:8px;border-radius:50%;background:#2E7D4F;margin-top:6px;box-shadow:0 0 0 4px rgba(46,125,79,.15)}
 
   /* действия */
-  .actions{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .actions{margin-top:10px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
   .btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;
     border-radius:12px;text-decoration:none;font-weight:600;font-size:15px;
     background:var(--card);border:1px solid var(--line);color:var(--ink);
     transition:transform .12s ease,background .12s ease}
   .btn:active{transform:scale(.98)}
   .btn svg{width:20px;height:20px;flex:none}
-  .btn.col{flex-direction:column;gap:4px;font-size:13px;font-weight:500;min-height:64px}
+  .btn.col{flex-direction:column;gap:3px;font-size:13px;font-weight:500;min-height:58px}
   .btn.primary{grid-column:1/-1;background:var(--navy);border-color:var(--navy);color:var(--navy-ink)}
   .btn:focus-visible{outline:3px solid var(--ochre);outline-offset:2px}
 
   /* секции */
-  section{margin-top:34px}
-  h2{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:12px;
+  section{margin-top:20px}
+  h2{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:8px;
     display:flex;align-items:center;gap:10px}
   h2::after{content:"";flex:1;height:1px;background:var(--line)}
 
   .facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid var(--line);border-radius:var(--r);background:var(--card);overflow:hidden}
-  .fact{padding:14px 10px;min-width:0}
+  .fact{padding:11px 12px;min-width:0}
   .fact+.fact{border-left:1px solid var(--line)}
-  .fact.edu{grid-column:1/-1;border-left:0;border-top:1px solid var(--line);display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 10px;padding:12px 14px}
+  .fact.edu{grid-column:1/-1;border-left:0;border-top:1px solid var(--line);display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 10px;padding:9px 12px}
   .fact.edu b{font-size:18px}
   .fact.edu span{margin-top:0;font-size:14px}
   .fact b{display:block;font-size:26px;line-height:1;font-weight:700;letter-spacing:-.02em;white-space:nowrap}
   .fact span{display:block;margin-top:6px;font-size:12.5px;line-height:1.3;color:var(--muted);hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
 
   .list{list-style:none;border-top:1px solid var(--line)}
-  .list li{padding:14px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:28px 1fr;gap:4px 10px}
+  .list li{padding:10px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:28px 1fr;gap:4px 10px}
   .list svg{width:22px;height:22px;color:var(--navy);margin-top:1px}
   .list h3{font-size:16px;font-weight:600;line-height:1.3}
-  .list p{grid-column:2;color:var(--muted);font-size:14.5px;line-height:1.45}
+  .list p{grid-column:2;color:var(--muted);font-size:14px;line-height:1.4}
 
-  .now{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--navy);border-radius:var(--r);padding:14px 16px}
-  .now small{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
-  .now p{font-size:15px;line-height:1.45}
-
-  .formats{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-  .fmt{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px}
-  .fmt b{display:block;font-size:15px;font-weight:600;margin-bottom:4px}
-  .fmt span{font-size:13.5px;line-height:1.4;color:var(--muted)}
+  .now{margin-top:12px;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--navy);border-radius:var(--r);padding:10px 14px}
+  .now small{display:block;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+  .now p{font-size:14.5px;line-height:1.4}
+  .now p+small{margin-top:8px;padding-top:8px;border-top:1px solid var(--line)}
 
   .contacts{background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
-  .contacts a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 16px;text-decoration:none;min-height:56px}
+  .contacts a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:9px 14px;text-decoration:none;min-height:48px}
   .contacts a+a{border-top:1px solid var(--line)}
   .contacts small{display:block;font-size:12px;color:var(--muted)}
   .contacts .v{font-weight:600;font-size:16px;user-select:all}
   .contacts svg{width:18px;height:18px;color:var(--muted);flex:none}
 
-  footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
-
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
-  @media (min-width:600px){.wrap{padding-top:48px}}
+  @media (min-width:600px){.wrap{padding-top:40px}}
 </style>
 </head>
 <body>
@@ -129,13 +117,10 @@
   <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></g></symbol>
   <symbol id="i-deal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"><path d="M3 11l4-4 5 3 5-3 4 4-9 8z"/><path d="m9 13 3 2"/></g></symbol>
   <symbol id="i-bld" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M4 21V5l8-2v18M12 9l8 3v9M2 21h20"/><path d="M7 8h2M7 12h2M7 16h2M15 14h2M15 18h2"/></g></symbol>
-  <symbol id="i-wh" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M2 21V9l10-6 10 6v12"/><path d="M6 21v-8h12v8M6 16h12"/></g></symbol>
   <symbol id="i-arr" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M7 17 17 7M9 7h8v8"/></symbol>
 </svg>
 
 <main class="wrap">
-  <div class="meta"><b>Коммерческая недвижимость</b><span>Москва</span></div>
-
   <header class="hero">
     <picture><source srcset="photo.webp?v=3" type="image/webp"><img class="photo" src="photo.jpg?v=3" alt="Екатерина Старченко" width="112" height="140" fetchpriority="high"></picture>
     <div>
@@ -144,7 +129,7 @@
     </div>
   </header>
 
-  <p class="lead">Договоры аренды, брокеридж и управление объектами. Склады, Light и&nbsp;Urban Industrial.</p>
+  <p class="lead">Правовое сопровождение, брокеридж, управление объектами.</p>
 
   <div class="status"><span class="dot" aria-hidden="true"></span>
     <span>Рассматриваю роль в команде собственника или девелопера.</span></div>
@@ -171,27 +156,15 @@
       <li><svg><use href="#i-doc"/></svg><h3>Договоры аренды и субаренды</h3>
         <p>Разработка и экспертиза, протоколы разногласий, защита интересов собственника.</p></li>
       <li><svg><use href="#i-deal"/></svg><h3>Брокеридж и переговоры</h3>
-        <p>Поиск арендатора, показы, переговоры — до подписания договора.</p></li>
+        <p>Поиск арендатора, показы, переговоры до подписания договора.</p></li>
       <li><svg><use href="#i-bld"/></svg><h3>Управление объектами</h3>
         <p>Рент-ролл, контроль платежей и индексации, работа с УК, досудебная работа с долгами.</p></li>
-      <li><svg><use href="#i-wh"/></svg><h3>Склады и Light Industrial</h3>
-        <p>Практика сдачи складских площадей. Фокус — Light и Urban Industrial.</p></li>
     </ul>
-  </section>
-
-  <section aria-labelledby="h-now">
-    <h2 id="h-now">Сейчас</h2>
     <div class="now">
-      <small>Текущий проект</small>
+      <small>Фокус профессиональных интересов</small>
+      <p>Склады и Light Industrial. Есть опыт сдачи складских площадей.</p>
+      <small>Сейчас</small>
       <p>Коммерческий и правовой аудит рынка Light Industrial Московского региона для частного инвестиционного фонда.</p>
-    </div>
-  </section>
-
-  <section aria-labelledby="h-fmt">
-    <h2 id="h-fmt">Формат работы</h2>
-    <div class="formats">
-      <div class="fmt"><b>In-house</b><span>Позиция в команде собственника или девелопера.</span></div>
-      <div class="fmt"><b>Проект</b><span>Экспертиза договоров, аудит объекта, сопровождение сделки аренды.</span></div>
     </div>
   </section>
 
